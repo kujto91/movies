@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The Architectural pillars of the Movies App
+### Bootstrap Development
+### RESTful Web API
 
-Things you may want to cover:
+## Ruby version
+* ruby: 2.6.0dev
 
-* Ruby version
+# Getting Started
+  After you have cloned this repo, run this setup script to set up your machine
+  with the necessary dependencies to run and test this app:
 
-* System dependencies
+    % ./bin/setup
 
-* Configuration
+# Guidelines
+  Use the following guides for getting things done, programming well, and
+  programming in style.
 
-* Database creation
+  * [Protocol](http://github.com/thoughtbot/guides/blob/master/protocol)
+  * [Best Practices](http://github.com/thoughtbot/guides/blob/master/best-practices)
+  * [Style](http://github.com/thoughtbot/guides/blob/master/style)
 
-* Database initialization
+# Branching Strategy
+  Development should take place on feature branches, branched from `master`.
+  Successful merge requests are merged back to `master`.
+  For a production deployment, the current status from `master` is merged to `production`.
 
-* How to run the test suite
+# Development
+  % rspec
+  This task will run all the `Spec` tests
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Deployment
