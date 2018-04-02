@@ -1,0 +1,43 @@
+.panel.panel-default
+  .panel-body
+    .row
+      .col-md-4
+        = image_tag @movie.poster
+
+        .table-responsive
+          %table.table
+            %tbody
+              %tr
+                %td.strong Title:
+                %td= @movie.title
+
+              %tr
+                %td.strong Plot:
+                %td= @movie.plot
+
+              %tr
+                %td.strong Genre:
+                %td= @movie.genre
+
+              %tr
+                %td.strong Director:
+                %td= @movie.director
+
+              %tr
+                %td.strong Released:
+                %td= @movie.released
+
+              %tr
+                %td.strong Runtime:
+                %td= @movie.runtime
+
+              %tr
+                %td.strong Year:
+                %td= @movie.year
+
+              %tr
+                %td.strong Rating:
+                %td= @movie.rated
+
+          %br
+          = link_to 'Back', root_path, class: 'button'

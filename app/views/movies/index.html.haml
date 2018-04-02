@@ -1,0 +1,12 @@
+.row
+  - if @movies.present?
+    - @movies.each do |movie|
+      .col-sm-6.col-md-3{id: "#{movie.id}"}
+        .thumbnail
+          = link_to (image_tag movie.poster, class: 'image'), movie_path(movie.id)
+
+        %p.text-center= movie.title
+        %p.text-center= movie.year
+
+  - else
+    %h1 There are no Movies at the moment to be listed!
